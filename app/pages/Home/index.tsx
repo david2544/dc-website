@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import { Map, TileLayer } from 'react-leaflet';
 import arrow from '@images/arrow_44.svg';
 import secondArrow from '@images/arrow_20.svg';
 import github from '@images/icons8-github.svg';
@@ -15,7 +15,7 @@ const Home: React.FC = () => {
   // TODO, make the breaths taken thingy real
   const [displayArrow, setDisplayArrow] = useState(false);
   const [displaySecondArrow, setDisplaySecondArrow] = useState(false);
-  const [displayMainContent, setdisplayMainContent] = useState(false);
+  const [displayMainContent, setdisplayMainContent] = useState(true);
   const [displayMe, setDisplayMe] = useState(false);
 
   return (
@@ -145,11 +145,12 @@ const Home: React.FC = () => {
             <div className={`col-xs-5 ${styles.aboutMeGeneral}`}>
               <div>
                 I am a frontend dev, building web apps and websites with React for a few years now.
-                Recently, I'm leaning towards freelancing. Got any cool projects coming up? Hit me
-                up
+                Recently, I&#39;m leaning towards freelancing. Got any cool projects coming up? Hit
+                me up
               </div>
               <div className={styles.downloadCv}>
-                <strong>Wanna know more?</strong> <a href="">David_Coroian_CV.pdf</a>
+                <strong>Wanna know more?</strong>{' '}
+                <a href="https://google.com">David_Coroian_CV.pdf</a>
               </div>
               <div className={styles.socialMediaAboutMe}>
                 <strong>Wanna get in touch?</strong>
@@ -160,7 +161,7 @@ const Home: React.FC = () => {
             </div>
             <div className={`col-xs-6 col-xs-offset-1 ${styles.locationBox}`}>
               <div className={styles.locationText}>
-                Oh and about where I am, can't tell you for sure, but currently somewhere around
+                Oh and about where I am, can&#39;t tell you for sure, but currently somewhere around
                 here:
               </div>
               <Map center={[52.52, 13.4]} zoom={10} className={styles.map}>
