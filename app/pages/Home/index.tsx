@@ -15,7 +15,7 @@ const Home: React.FC = () => {
   // TODO, make the breaths taken thingy real
   const [displayArrow, setDisplayArrow] = useState(false);
   const [displaySecondArrow, setDisplaySecondArrow] = useState(false);
-  const [displayMainContent, setdisplayMainContent] = useState(true);
+  const [displayMainContent, setdisplayMainContent] = useState(false);
   const [displayMe, setDisplayMe] = useState(false);
 
   return (
