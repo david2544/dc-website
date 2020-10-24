@@ -78,7 +78,7 @@ const Home: React.FC = () => {
                 .changeDeleteSpeed(1)
                 .deleteChars(137)
                 .typeString(
-                  "In the meantime, I'm keeping myself busy with some fun projects. Bun enough chit-chat, check out below what I've been up to",
+                  "In the meantime, I'm keeping myself busy with some fun projects. But enough chit-chat, check out below what I've been up to",
                 )
                 .pauseFor(500)
                 .callFunction(() => {
